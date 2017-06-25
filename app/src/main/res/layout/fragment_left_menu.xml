@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left_rll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.Fragment.LeftMenuFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></View>
+
+    <LinearLayout
+        android:id="@+id/left_menu_first"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/left_menu_sceond"
+        android:background="@color/main_top_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/left_menu_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/picture"
+            android:textColor="@color/main_top_tab_color"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_menu_sceond"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/left_menu_third"
+        android:background="@color/main_top_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/left_menu_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/movie"
+            android:textColor="@color/main_top_tab_color"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/left_menu_third"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/left_menu_fourth"
+        android:background="@color/main_top_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/left_menu_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music"
+            android:textColor="@color/main_top_tab_color"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/left_menu_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_top_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/left_menu_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/out"
+            android:textColor="@color/main_top_tab_color"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+</RelativeLayout>
